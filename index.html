@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="noticeContainer">
+        <h1 id="notice"></h1>
+    </div>
+    <div id="cellContainer">
+        <div class="row">
+            <div class="cell" onclick="handleCellClick(0, 0)"></div>
+            <div class="cell" onclick="handleCellClick(0, 1)"></div>
+            <div class="cell" onclick="handleCellClick(0, 2)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" onclick="handleCellClick(1, 0)"></div>
+            <div class="cell" onclick="handleCellClick(1, 1)"></div>
+            <div class="cell" onclick="handleCellClick(1, 2)"></div>
+        </div>
+        <div class="row">
+            <div class="cell" onclick="handleCellClick(2, 0)"></div>
+            <div class="cell" onclick="handleCellClick(2, 1)"></div>
+            <div class="cell" onclick="handleCellClick(2, 2)"></div>
+        </div>
+    </div>
+
+    <div id="buttonContainer">
+        <select id="difficultyOptions" onchange="getSelection()">Select a difficulty
+            <option value="impossible">Impossible</option>
+                <option value="medium">Medium</option>
+            <option value="easy">Easy</option>
+        </select>
+        <button id="resetButton" onclick="reset()">Reset</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    background-image: url("./images/background.jpg");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#cellContainer {
+    height: 250px; 
+    /* Căn giữa theo chiều ngang */
+    display: flex;
+    justify-content: center;
+    /* Nội dung bên trong container các viền trên 1 khoảng tuỳ ý */
+    padding-top: 80px;
+    flex-direction: column;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    /* Độ dày, kiểu nét, màu của viền */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hình dạng con trỏ khi chạm vào đối tượng */
+    cursor: pointer;
+    /* Ẩn con trỏ soạn thảo */
+    user-select: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
+    
+
+}
+
+.cell:not(:last-child) {
+    border-right: 5px solid black;
+}
+
+.row:not(:last-child) .cell {
+    border-bottom: 5px solid black;
+}
+
+.row {
+    justify-content: center;
+    display: flex;
+}
+
+.cell:hover {
+    background-color: peru;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 80px;
+}
+
+#resetButton {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-image: url("./images/brick.jpg");
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+#difficultyOptions {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;    
+    border: 2px solid black;
+    background-image: url("./images/brick.jpg");
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+#noticeContainer {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+}
+
+#notice {
+    background-color:burlywood;
+    height: 125px;
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(114, 58, 1);
+    font-style: italic;
+    display: none;
+    text-align: center;
+}
+  
+
