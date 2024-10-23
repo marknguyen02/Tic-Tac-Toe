@@ -4,6 +4,7 @@ let board = [
     ["", "", ""]
 ]
 
+/* Global environment */
 const cellContainer = document.getElementById("cellContainer");
 const selectElement = document.getElementById("difficultyOptions");
 const initialColor = cellContainer.children[0].children[0].style.color;
